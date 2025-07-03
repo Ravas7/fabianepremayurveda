@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Práticas Integrativas - Fabiane Prem</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/jpeg" href="logo.jpg">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="cabecalho">
+    
+    <div class="container">
+      
+    <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+      <img src="logo.jpg" alt="Logotipo" style="height: 60px; width: auto;">
+      <h1 class="logo">Fabiane Prem Ayurvédica</h1>
+      
+    </div>
+    
+      <nav class="menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre Mim</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button id="toggle-tema" style="margin-top: 1rem;">Alternar Tema</button>
+  </header>
+
+  <section id="inicio" class="inicio">
+    <div class="container">
+      <h2>Bem-vindo(a)</h2>
+      <p>Desperte sua essência e reequilibre corpo, mente e alma com práticas ancestrais que promovem cura e autoconhecimento.</p>
+      <img src="fabiane.jpg" alt="Imagem da profissional trabalhando" width="750px">
+      
+    </div>
+  
+     
+    </section>
+
+  
+
+    <section id="sobre" class="sobre">
+
+    <div class="container">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Sou Fabiane Prem, terapeuta integrativa com formação em yoga, massagem ayurvédica e técnicas de cura natural. Acredito no poder do toque consciente e da respiração como portais para o equilíbrio verdadeiro.</p>
+      <img src="workshop.jpg" alt="Profissional aplicando massagem" width="750px">
+      <img src="sessão2.jpg" alt="Imagem da profissional trabalhando" width="750px">
+    </div>
+  </section>
+
+ 
+
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <ul>
+        <li><strong>Massagem Ayurvédica:</strong> Harmonização dos doshas com óleos, toques profundos e alongamentos.</li>
+        <li><strong>Yoga Individual:</strong> Aulas adaptadas à sua realidade física e emocional.</li>
+        <li><strong>Yoga Ayurvédica:</strong> Prática alinhada à sua constituição corporal e energética.</li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <section id="precos" class="precos">
+    <div class="container">
+      <h2>Tabela de Preços</h2>
+      <table>
+        <tr>
+          <th>Serviço</th>
+          <th>Duração</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Massagem Ayurvédica</td>
+          <td>90 minutos</td>
+          <td>R$ 180,00</td>
+        </tr>
+        <tr>
+          <td>Yoga (Individual)</td>
+          <td>60 minutos</td>
+          <td>R$ 100,00</td>
+        </tr>
+        <tr>
+          <td>Yoga Ayurvédica</td>
+          <td>75 minutos</td>
+          <td>R$ 120,00</td>
+        </tr>
+        <tr>
+          <td>Pacote com 4 Sessões</td>
+          <td>Variado</td>
+          <td>R$ 380,00</td>
+        </tr>
+      </table>
+    </div>
+  
+
+      <section id="depoimentos" class="depoimentos">
+  <div class="container">
+    <h2>O que dizem os clientes</h2>
+
+    <div class="depoimento">
+      <blockquote>
+        “A melhor massagem que já recebi! Saí renovada.” – Mariana R.
+      </blockquote>
+      <img src="mariana.png" alt="Cliente Mariana recebendo massagem" class="foto-depoimento">
+    </div>
+
+    <div class="depoimento">
+      <blockquote>
+        “As aulas de yoga me trouxeram mais equilíbrio emocional.” – João L.
+      </blockquote>
+    <img src="joão.png" alt="Cliente João praticando yoga" class="foto-depoimento">
+    </div>
+  </div>
+</section>
+
+        </section>
+    <section id="formulario" class="formulario">
+  <div class="container">
+    <h2>Agende uma Sessão</h2>
+    <form id="form-agendamento">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="servico">Serviço desejado:</label>
+      <select id="servico" name="servico" required>
+        <option value="">Selecione</option>
+        <option value="massagem">Massagem Ayurvédica</option>
+        <option value="yoga">Yoga Individual</option>
+        <option value="yoga-ayur">Yoga Ayurvédica</option>
+      </select>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem-sucesso" style="color: green; display: none;">Mensagem enviada com sucesso!</p>
+  </div>
+</section>
+
+    <section id="contato" class="contato">
+ <a href="https://wa.me/5571993728991" class="botao-agendar" target="_blank">Agendar pelo WhatsApp</a>
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Agende sua sessão ou tire suas dúvidas pelos canais abaixo:</p>
+      <ul style="text-align:center; list-style:none;">
+        <li>📱 WhatsApp: <a href="https://wa.me/5571993728991" target="_blank">(71) 993672-8991</a></li>
+        <li>📧 E-mail: <a href="mailto:fabianeprem@gmail.com">fabianeprem@gmail.com</a></li>
+        <li>📍 Local: Tv. Garoupa, 36 - STIEP, Salvador - BA, 41770-470</li>
+      </ul>
+      <div class="redes-sociais">
+        <a href="https://instagram.com/fabianeprem_ayurveda" target="_blank">Instagram</a>
+        <a href="https://facebook.com/fabiane.prem" target="_blank">Facebook</a>
+        <a href="https://www.youtube.com/@fabianeprem8793" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </section>
+<section id="mapa" class="mapa">
+  <div class="container">
+    <h2>Como Chegar</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.031112020099!2d-38.45222268463329!3d-12.984139890848523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160f7d948524df%3A0xc098e457da9a34f4!2sTv.%20Garoupa%2C%2036%20-%20Stiep%2C%20Salvador%20-%20BA%2C%2041770-470!5e0!3m2!1spt-BR!2sbr!4v1720037340000!5m2!1spt-BR!2sbr"
+      width="100%"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+  <footer class="rodape">
+    <div class="container">
+      <p>&copy; 2025 Fabiane Santos • Todos os direitos reservados</p>
+    
+      <p style="margin-top: 1rem; font-size: 0.85rem;">
+        Política de Atendimento: Cancelamentos devem ser feitos com pelo menos 24h de antecedência. Em caso de atraso superior a 15 minutos, a sessão poderá ser reagendada.
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+</html>
