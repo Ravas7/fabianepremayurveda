@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const servico = form.servico.value;
     const mensagem = form.mensagem.value.trim();
 
-    // Validações
+    
     if (nome.length < 3) {
       alert("Nome deve ter ao menos 3 caracteres.");
       return;
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Mostrar sucesso
+   
     mensagemSucesso.style.display = "block";
     form.reset();
   });
